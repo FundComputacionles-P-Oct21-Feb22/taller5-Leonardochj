@@ -1,0 +1,73 @@
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida excede de 50 unidades, se hace un descuento de 15%.
+
+1) Inicio
+2) Valor de la cantidad_pedida d[0, n]
+3) Valor del precio_unitario d[0, n]
+4) Valor del porcentaje d[0, n]
+5) Valor del descuento d[o, n]
+6) CostoTotal d[0, n]
+7) descuento d[0, n]
+8) Porcentaje <-- 15
+
+9) Escribe "Ingrese la descripcion del articulo"
+   Lea descripcion_articulo
+
+10)Escribe "Ingrese la cantidad_requerida"
+   Lea cantidad_requerida
+
+11) Escribe "Ingrese precio_unitario"
+   Lea precio_unitario
+
+12)CostoTotal <-- cantidad_requerida * precio_unitario
+13)Si Cantidad requerida > 50 entonces
+ // vt ---- 100%
+ // x ---- 15%
+
+14)descuento <-- (porcentaje*costoTotal) / 100
+15)valorTotal <-- valorTotal-descuento
+16)Fin si
+
+17)Escribir "El valor total es:" + valorTotal + descripcion
+
+18)Fin
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida excede de 10 o 20 unidades, se hace un descuento de 15%; caso contrario se descuenta el 10%
+
+1) Inicio
+2) Valor total d[0, n]
+3) Cantidad_requeridad d[0, n]
+4) Precio_unitario d[0, n]
+5) Porcentaje d[0, n]
+6) Descuento d[0, n]
+
+7) Porcentaje <-- 15
+8) Porcentaje caso_contrario <--10
+
+9) Escribir "Descripcion del articulo"
+   Lea descripcion_articulo
+10) Escribir "cantidad_requerida"
+   Lea cantidad_requerida
+11)Escribir "precio_unitario"
+   Lea precio_unitario
+
+12)ValorTotal<--cantidad_requerida*precio_unitario
+13)Si cantidad = 10 OR cantidad = 20  entonces
+   vt ---- 100%
+   x ---- 15%
+14)descuento1 <-- (porcentaje*valorTotal)/100  
+15)valorTotal <-- valorTotal-descuento1
+
+16)Caso contrario
+   vt ---- 100%
+   x ---- 10%
+17)descuento2 <-- (porcentaje*valorTotal)/100
+18)valorTotal <-- valorTotal-descuento2
+19)Fin si
+
+20)Escribir "el valorTotal es:" + valorTotal + descripcion
+
+21)Fin

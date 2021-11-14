@@ -1,0 +1,41 @@
+En una hosteria de la ciudad de Loja se hace un descuento del 10% si el cliente se hospeda más de 5 días, del 15% si se hospeda más de 10 días y del 20% si se hospeda más de 15 días. 
+Elaborar un solución que pida como datos de entrada el número de días y el precio diario de la habitación y luego calcule e imprima el subtotal por pagar, el descuento y el total por pagar.
+
+1) Inicio
+
+2) valorTotal d[0, n]
+3) diasHopedaje d[0, n]
+4) precioHabitacion d[0, n]
+5) subTotal d[0, n]
+6) descuento d[0, n]
+7) porcentaje1 <-- 10
+8) porcentaje2 <-- 15
+9) porcentaje3 <-- 20
+
+10)Escribir "Ingrese el valor de los dias de hospedaje"
+   Lea dias_hospedaje
+11)Escribir "Ingrese el valor del precio diario de la habitación"
+   Lea precio_habitacion
+12)Escribir "Ingrese el valor del subtotal"
+   Lea subTotal
+
+13)Si diasHospedaje > 5 AND diasHospedaje < 10 entonces
+14)descuento1 <-- (subTotal * porcentaje1)/100
+15)valorTotal1 <-- subTotal - descuento1
+16)Fin si
+
+17)Si diasHospedaje > 10 AND diasHospedaje < 15 entonces
+18)descuento2 <-- (subTotal * porcentaje2)/100
+19)valorTotal2 <-- subTotal - descuento2
+20)Fin si
+
+21)Si diasHospedaje > 15 AND dias Hospedaje < 20 entonces
+22)descuento3 <-- (subTotal * porcentaje3)/100
+23)valorTotal3 <-- subTotal - descuento3
+24)Fin si
+
+25)Escribir "El valor a pagar es:" + valorTotal1 + valorTotal2 + valorTotal3
+26)Escribir "El valor del descuento es:" + descuento1 + descuento2 + descuento3
+27)Escribir "El valor del subTotal es:" + subTotal1 + subTotal2 + subTotal3
+
+28)Fin
